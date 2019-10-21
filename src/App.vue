@@ -14,20 +14,30 @@
         <span class="mr-2">Latest Release</span>
       </v-btn>
     </v-app-bar>
-
     <v-content>
       <HelloWorld/>
+      <Profile user-name="Ryo Takazawa" />
+      <Skills/>
+      <Works/>
+      <Contact/>
     </v-content>
   </v-app>
 </template>
-
 <script>
 import HelloWorld from './components/HelloWorld';
+import Profile from './components/Profile';
+import Skills from './components/Skills';
+import Works from './components/Works';
+import Contact from './components/Contact';
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
+    Profile,
+    Skills,
+    Works,
+    Contact
   },
   data: () => ({
     //
