@@ -2,8 +2,8 @@
   <v-app>
     <v-app-bar app>
       <v-toolbar-title class="headline text-uppercase">
-        <span>Vuetify</span>
-        <span class="font-weight-light">MATERIAL DESIGN</span>
+        <span>ryo takazawa</span>
+        
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-btn
@@ -15,7 +15,7 @@
       </v-btn>
     </v-app-bar>
     <v-content>
-      <HelloWorld/>
+      <Top/>
       <Profile user-name="Ryo Takazawa" />
       <Skills/>
       <Works/>
@@ -24,7 +24,7 @@
   </v-app>
 </template>
 <script>
-import HelloWorld from './components/HelloWorld';
+import Top from './components/Top';
 import Profile from './components/Profile';
 import Skills from './components/Skills';
 import Works from './components/Works';
@@ -33,7 +33,7 @@ import Contact from './components/Contact';
 export default {
   name: 'App',
   components: {
-    HelloWorld,
+    Top,
     Profile,
     Skills,
     Works,

@@ -6,10 +6,10 @@
     >
       <v-flex xs12>
         <v-img
-          :src="require('../assets/polo.jpg')"
+          :src="require('../assets/profile.jpeg')"
           class="my-3"
-          contain
-          height="200"
+          contain                    
+          height="500"
         ></v-img>
       </v-flex>
 
