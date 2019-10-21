@@ -15,32 +15,11 @@
       </v-btn>
     </v-app-bar>
     <v-content>
-      <Top/>
-      <Profile user-name="Ryo Takazawa" />
-      <Skills/>
-      <Works/>
-      <Contact/>
+      <router-link to="/">Top</router-link> |
+      <router-link to="/profile">Profile</router-link>
+      <router-view
+              user-name='Ryo Takazawa'
+      ></router-view>
     </v-content>
   </v-app>
 </template>
-<script>
-import Top from './components/Top';
-import Profile from './components/Profile';
-import Skills from './components/Skills';
-import Works from './components/Works';
-import Contact from './components/Contact';
-
-export default {
-  name: 'App',
-  components: {
-    Top,
-    Profile,
-    Skills,
-    Works,
-    Contact
-  },
-  data: () => ({
-    //
-  }),
-};
-</script>
