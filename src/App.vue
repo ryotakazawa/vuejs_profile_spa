@@ -1,38 +1,39 @@
 <template>
   <v-app>
-    <v-app-bar app>
-      <v-toolbar-title class="headline text-uppercase" @click="$vuetify.goTo(toProfile)">
-        <span>ryo takazawa</span>
-        
+    <v-app-bar 
+      flat
+      color="transparent"
+      class="mt-3"
+      app>
+      <v-toolbar-title
+        class="headline"
+        @click="$vuetify.goTo(toTop)"
+        >
+        <v-img
+          :src="require('./assets/RyoTakazawa.png')"
+          class="my-3"
+          width="60"         
+          height="60" 
+        ></v-img>
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-btn
-        text 
-        @click="$vuetify.goTo(toProfile)">
-        <span class="mr-2">Profile</span>
+        text
+        v-for="(mn, i) in items" 
+        :key="i"  
+        @click="$vuetify.goTo(mn.href)"
+        class="hidden-sm-and-down"
+        >
+        <span class="mr-2">{{mn.title}}</span>
       </v-btn>
-      <v-btn
-        text 
-        @click="$vuetify.goTo(toSkills)">
-        <span class="mr-2">Skills</span>
-      </v-btn>
-      <v-btn
-        text 
-        @click="$vuetify.goTo(toWorks)">
-        <span class="mr-2">Works</span>
-      </v-btn>
-      <v-btn
-        text 
-        @click="$vuetify.goTo(toContact)">
-        <span class="mr-2">Contact</span>
-      </v-btn>
+
     </v-app-bar>
     <v-content>
-      <Top id="top" />
-      <Profile user-name='Ryo Takazawa' style='height: 500px;' id="profile" />
-      <Skills style='height: 500px;' id="skills" />
-      <Works style='height: 500px;' id="works" />
-      <Contact style='height: 500px;' id="contact" />
+      <Top id="top" class="mb-9" />
+      <Profile user-name='Ryo Takazawa' style='height: 700px;' id="profile" />
+      <Skills style='height: 700px;' id="skills" />
+      <Works style='height: 700px;' id="works" />
+      <Contact style='height: 700px;' id="contact" />
     </v-content>
   </v-app>
 </template>
@@ -55,15 +56,21 @@ export default {
   },
   data: () => ({
     toTop: '#top',
-    toProfile: '#profile',
-    toSkills: '#skills',
-    toWorks: '#works',
-    toContact: '#contact'
+    items: [
+        { title: 'Top', icon: 'dashboard', href:'#top' },
+        { title: 'Profile', icon: 'question_answer', href:'#profile' },
+        { title: 'Skills', icon: 'question_answer', href:'#skills' },
+        { title: 'Works', icon: 'question_answer', href:'#works' },
+        { title: 'Contact', icon: 'question_answer', href:'#contact' },        
+      ],
   }),
 };
 </script>
 
 <style scoped>
+.headline{
+  cursor: pointer;
+}
 .fade-enter,
 .fade-leave-to{
   opacity: 0;
