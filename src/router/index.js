@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+
 import Top from '../components/Top.vue'
 import Profile from '../components/Profile.vue'
 import Works from '../components/Works.vue'
