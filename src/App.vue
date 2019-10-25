@@ -62,10 +62,10 @@
     </v-container>
     <v-content justify-center>
       <Top id="top" class="mb-10" />
-      <Profile user-name='Ryo Takazawa' style='height: 700px;' id="profile" />
-      <Skills style='height: 700px;' id="skills" />
-      <Works style='height: 700px;' id="works" />
-      <Contact style='height: 700px;' id="contact" />
+      <Profile user-name='Ryo Takazawa'  id="profile" />
+      <Skills  id="skills" />
+      <Works  id="works" />
+      <Contact  id="contact" />
     </v-content>
   </v-app>
 </template>
@@ -90,11 +90,11 @@ export default {
     navbar: null,
     toTop: '#top',
     items: [
-        { title: 'Top', icon: 'dashboard', href:'#top' },
-        { title: 'Profile', icon: 'question_answer', href:'#profile' },
-        { title: 'Skills', icon: 'question_answer', href:'#skills' },
-        { title: 'Works', icon: 'question_answer', href:'#works' },
-        { title: 'Contact', icon: 'question_answer', href:'#contact' },        
+        { title: 'Top', href:'#top' },
+        { title: 'Profile', href:'#profile' },
+        { title: 'Skills', href:'#skills' },
+        { title: 'Works', href:'#works' },
+        { title: 'Contact', href:'#contact' },        
       ],
   }),
 };
