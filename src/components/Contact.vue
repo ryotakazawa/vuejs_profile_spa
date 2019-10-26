@@ -1,4 +1,5 @@
 <template>
+<v-app>
   <v-container>
     <v-layout justify-center>
       <v-card-title class="font-weight-bold">
@@ -6,6 +7,7 @@
       </v-card-title>
     </v-layout>
   </v-container>
+</v-app>
 </template>
 
 <script>
