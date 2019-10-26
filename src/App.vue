@@ -92,8 +92,8 @@ export default {
     items: [
         { title: 'Top', href:'#top' },
         { title: 'Profile', href:'#profile' },
-        { title: 'Skills', href:'#skills' },
         { title: 'Works', href:'#works' },
+        { title: 'Skills', href:'#skills' },
         { title: 'Contact', href:'#contact' },        
       ],
   }),
