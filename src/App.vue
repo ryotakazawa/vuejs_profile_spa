@@ -63,8 +63,8 @@
     <v-content justify-center>
       <Top id="top" class="mb-10" />
       <Profile user-name='Ryo Takazawa'  id="profile" />
-      <Skills  id="skills" />
       <Works  id="works" />
+      <Skills  id="skills" />
       <Contact  id="contact" />
     </v-content>
   </v-app>

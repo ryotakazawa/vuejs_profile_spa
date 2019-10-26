@@ -1,13 +1,14 @@
 <template>
   <v-app>
     <v-container>
-      <v-layout justify-center mb-12>
+      <v-layout justify-center>
         <v-card-title class="font-weight-bold">
           <h1 data-aos="fade-up">Works</h1>
         </v-card-title>
       </v-layout>
-      <v-layout justify-center row wrap>
+      <v-layout justify-center raw wrap>
         <v-flex 
+          mt-9
           mb-3
           v-for="(item, i) in items"
           :key="i"
@@ -69,7 +70,6 @@
 <script>
 export default {
   data: () => ({
-    taka: "zawa",
     items: [
         { id: "1",
           pic: require('@/assets/bestmen_top.png'),
