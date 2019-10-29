@@ -1,4 +1,5 @@
 <template>
+<v-app>
   <v-container>
     <v-layout
       v-if="$vuetify.breakpoint.xs"
@@ -34,13 +35,14 @@
         <v-img
           :src="require('../assets/topPage.png')"
           contain                    
-          height="500"
+          height="450"
         ></v-img>
       </v-flex>
       <v-flex xs2 > 
       </v-flex>
     </v-layout>
   </v-container>
+</v-app>
 </template>
 
 <script>
