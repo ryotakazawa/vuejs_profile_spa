@@ -102,31 +102,26 @@ export default {
     languages: [
         {
           name: 'HTML&CSS',
-          color: '#ff4081',
           start: '0',
           value: '75'
         },
         {
           name: 'JavaScript',
-          color:  '#ffd600',
           start: '0',
           value: '60'
         },
         {
           name: 'Ruby',
-          color:  '#ff1744',
           start: '0',
           value: '75'
         },
         {
           name: 'PHP',
-          color:  '#ff1744',
           start: '0',
           value: '40'
         },
         {
           name: 'PYTHON',
-          color:  '#ff1744',
           start: '0',
           value: '25'
         },                              
@@ -134,13 +129,11 @@ export default {
     frameworks: [
       {
         name: 'Ruby on rails',
-        color: '#ff4081',
         start: '0',
         value: '75'
       },
       {
         name: 'Vue.js',
-        color: '#ff4081',
         start: '0',
         value: '50'
       }
@@ -148,13 +141,11 @@ export default {
     clouds: [
       {
         name: 'AWS',
-        color: '#ff4081',
         start: '0',
         value: '70'
       },
       {
         name: 'GCP',
-        color: '#ff4081',
         start: '0',
         value: '25'
       },
@@ -162,13 +153,11 @@ export default {
     others: [
       {
         name: 'English',
-        color: '#ff4081',
         start: '0',
         value: '88'
       },
       {
-        name: 'English',
-        color: '#ff4081',
+        name: 'Photoshop',
         start: '0',
         value: '88'
       }

@@ -31,7 +31,7 @@
             </v-card-subtitle>
             <v-card-actions>
               <v-btn
-                color="green"
+                color="success"
                 text
                 target="_blank"
                 :href="item.github"
@@ -39,7 +39,7 @@
                 <v-fa :icon="['fab', 'github']" style="font-size:30px;" /> 
               </v-btn>
               <v-btn 
-                color="green"
+                color="success"
                 text
                 target="_blank"
                 :href="item.demo"
