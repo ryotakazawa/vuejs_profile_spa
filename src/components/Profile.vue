@@ -1,5 +1,5 @@
 <template>
-  <v-app id="inspire">
+  <v-app class="pt-10" style="background-color: #F2F2F2;">
     <v-container>
       <v-layout justify-center class="mb-8">
         <v-card-title class="font-weight-bold">

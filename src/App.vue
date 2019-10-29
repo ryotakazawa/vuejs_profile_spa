@@ -61,8 +61,8 @@
       </v-layout>
     </v-container>
     <v-content justify-center>
-      <Top id="top" class="mb-10" />
-      <Profile user-name='Ryo Takazawa'  id="profile" />
+      <Top id="top" />
+      <Profile id="profile" />
       <Works  id="works" />
       <Skills  id="skills" />
       <Contact  id="contact" />
