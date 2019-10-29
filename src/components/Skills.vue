@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app class="mb-10">
     <v-container>
       <v-layout justify-center>
         <v-card-title class="font-weight-bold">
