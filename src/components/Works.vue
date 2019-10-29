@@ -6,7 +6,7 @@
           <h1 data-aos="fade-up">Works</h1>
         </v-card-title>
       </v-layout>
-      <v-layout justify-center raw wrap>
+      <v-layout justify-center align-center raw wrap>
         <v-flex 
           mt-9
           mb-3

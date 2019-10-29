@@ -1,5 +1,5 @@
 <template>
-  <v-app id="prg1">
+  <v-app>
     <v-container>
       <v-layout justify-center>
         <v-card-title class="font-weight-bold">
@@ -21,7 +21,7 @@
           size="130"
           width="13"
           :value="language.value"
-          color="green"
+          color="success"
         >
           {{ language.name }}
         </v-progress-circular>
@@ -41,7 +41,7 @@
           size="130"
           width="13"
           :value="framework.value"
-          color="green"
+          color="success"
         >
           {{ framework.name }}
         </v-progress-circular>
@@ -61,7 +61,7 @@
           size="130"
           width="13"
           :value="cloud.value"
-          color="green"
+          color="success"
         >
           {{ cloud.name }}
         </v-progress-circular>
@@ -81,7 +81,7 @@
           size="130"
           width="13"
           :value="other.value"
-          color="green"
+          color="success"
         >
           {{ other.name }}
         </v-progress-circular>
