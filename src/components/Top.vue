@@ -26,14 +26,14 @@
       wrap
       class="mt-3"
       >
-      <v-flex xs2 class="ml-9">
-      </v-flex>
       <v-flex xs3 >
-        <h1 class="display-4 font-weight-bold" data-aos="zoom-in-left" data-aos-duration="1000"><span style="color: #e80135;">R</span>yo Takazawa</h1>
-        <h3><vue-typer text="-Could you employ me?-" :repeat='0' pre-type-delay='1300' ></vue-typer></h3>
+      </v-flex>
+      <v-flex xs2 class="ml-8" >
+        <h1 class="display-3 font-weight-bold" data-aos="zoom-in-left" data-aos-duration="1000"><span style="color: #e80135;">R</span>yo Takazawa</h1>
+        <h4 class="font-italic font-weight-bold"><vue-typer text="-Could you employ me?-" :repeat='0' pre-type-delay='1500' ></vue-typer></h4>
         
       </v-flex>
-      <v-flex xs6 class="ml-9">
+      <v-flex xs6 class="ml-8">
         <v-img
           :src="require('../assets/topPage.png')"
           contain                    

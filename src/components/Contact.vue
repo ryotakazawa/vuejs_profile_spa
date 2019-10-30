@@ -1,11 +1,18 @@
 <template>
-  <v-app class="pt-10">
+  <v-app>
     <v-container>
-      <v-layout justify-center class="mb-8">
-        <v-card-title class="font-weight-bold">
-          <h1 data-aos="fade-up">Contact</h1>
-        </v-card-title>
+      <v-layout justify-center class="mb-2">
+        <h1 data-aos="fade-up">Contact</h1>
       </v-layout>
+      <v-layout justify-center class="mb-8">
+        <div
+          data-aos="fade-up"
+          style="color: grey"
+          >
+          <h4>24時間以内に返信させて頂きますので<br/>受信可能なメールアドレスをご指定下さい</h4>
+        </div>
+      </v-layout>
+
       <v-form ref="form" v-model="contactFormValidation.valid" lazy-validation data-aos="fade-up">
         <v-text-field
           v-model="contactForm.name"

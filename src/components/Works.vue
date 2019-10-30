@@ -1,10 +1,8 @@
 <template>
-  <v-app class="pt-10">
+  <v-app class="pt-5">
     <v-container>
       <v-layout justify-center>
-        <v-card-title class="font-weight-bold">
-          <h1 data-aos="fade-up">Works</h1>
-        </v-card-title>
+        <h1 data-aos="fade-up">Works</h1>
       </v-layout>
       <v-layout justify-center raw wrap>
         <v-flex 
@@ -15,7 +13,7 @@
           >
           <v-card
           class="mx-auto"
-          max-width="344"
+          max-width="344px"
           data-aos="fade-up"
           data-aos-delay="150"
           >
@@ -30,6 +28,14 @@
               {{ item.subtitle }}
             </v-card-subtitle>
             <v-card-actions>
+              <v-btn 
+                color="success"
+                text
+                target="_blank"
+                :href="item.demo"
+                >
+                <v-fa icon="home" style="font-size:30px;" /> 
+              </v-btn>
               <v-btn
                 color="success"
                 text
@@ -38,12 +44,6 @@
               > 
                 <v-fa :icon="['fab', 'github']" style="font-size:30px;" /> 
               </v-btn>
-              <v-btn 
-                color="success"
-                text
-                target="_blank"
-                :href="item.demo"
-                >DEMO</v-btn>
               <v-spacer></v-spacer>
               <v-btn
                 icon
@@ -72,7 +72,7 @@ export default {
   data: () => ({
     items: [
         { id: "1",
-          pic: require('@/assets/bestmen_top.png'),
+          pic: require('@/assets/bestmen.png'),
           title: 'BESTMEN-1番だけをシェアしよう-',
           subtitle: 'Ruby + Rails + AWS',
           desc: `BESTMENは、ユーザーが認める１番のラーメン屋を、各ジャンル1店舗のみシェア出来るアプリケーションです。
@@ -89,7 +89,7 @@ export default {
           demo: 'https://thebestmen.net/',
           github: 'https://github.com/ryotakazawa/bestmen'},
         { id: "1",
-          pic: require('@/assets/vue_portfolio.png'),
+          pic: require('@/assets/ryotakazawa_vuejs.png'),
           title: 'Profile',
           subtitle: 'Vue.js + Vuetify + Firebase',
           desc: `ご覧頂いているこちらのサイトです。
@@ -98,7 +98,7 @@ Firebaseでホスティングされており、functionを利用したメール�
 今回得た知見を元に、次回はRails+Vueのアプリケーションを製作する予定です。`,
           show: false,
           href:'#profile',
-          demo: 'https://thebestmen.net/',
+          demo: 'https://ryo-takazawa.firebaseapp.com/',
           github: 'https://github.com/ryotakazawa/vuejs_profile_spa'},        
       ],
   }),

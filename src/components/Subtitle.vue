@@ -1,11 +1,6 @@
 <template>
   <v-layout justify-center pt-8>
-      <v-card-subtitle
-        data-aos="fade-up"
-        style="color: grey"
-        >
-        <h1>{{ skillCategory }}</h1>
-      </v-card-subtitle>
+    <h2 data-aos="fade-up" style="color: grey">{{ skillCategory }}</h2>
   </v-layout>
   
 
