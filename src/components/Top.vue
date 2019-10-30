@@ -2,7 +2,7 @@
 <v-app>
   <v-container>
     <v-layout
-      v-if="$vuetify.breakpoint.xs"
+      v-if="$vuetify.breakpoint.mdAndDown"
       text-center
       row
       wrap
@@ -15,8 +15,8 @@
         ></v-img>
       </v-flex>
       <v-flex>
-        <h1 class="display-3 font-weight-bold">Ryo Takazawa</h1>
-        <h4>-Could you employ me?-</h4>
+        <h1 data-aos="zoom-in">Ryo Takazawa</h1>
+        <h3><vue-typer text="-Could you employ me?-" :repeat='0' pre-type-delay='1000' type-delay='80' ></vue-typer></h3>
       </v-flex>
     </v-layout>
     <v-layout
@@ -24,21 +24,25 @@
       align-center
       row
       wrap
+      class="mt-3"
       >
+      <v-flex xs2 class="ml-9">
+      </v-flex>
       <v-flex xs3 >
+        <h1 class="display-4 font-weight-bold" data-aos="zoom-in-left" data-aos-duration="1000"><span style="color: #e80135;">R</span>yo Takazawa</h1>
+        <h3><vue-typer text="-Could you employ me?-" :repeat='0' pre-type-delay='1300' ></vue-typer></h3>
+        
       </v-flex>
-      <v-flex xs3 class="pl-8">
-        <h1 class="display-3 font-weight-bold">Ryo Takazawa</h1>
-        <h4>-Could you employ me?-</h4>
-      </v-flex>
-      <v-flex xs5 class="pl-4">
+      <v-flex xs6 class="ml-9">
         <v-img
           :src="require('../assets/topPage.png')"
           contain                    
-          height="450"
+          height="465"
+          data-aos="zoom-in-right"
+          data-aos-duration="1000"
         ></v-img>
       </v-flex>
-      <v-flex xs2 > 
+      <v-flex xs1>
       </v-flex>
     </v-layout>
   </v-container>
@@ -46,10 +50,15 @@
 </template>
 
 <script>
+import { VueTyper } from 'vue-typer'
+
 export default {
   data: () => ({
     //
   }),
+  components: {
+    VueTyper
+  },
 };
 </script>
 
