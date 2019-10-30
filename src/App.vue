@@ -41,7 +41,7 @@
                 <v-btn
                   v-on="on"
                   text
-                  class="hidden-sm-and-up"
+                  class="hidden-md-and-up"
                 >
                   Menu
                 </v-btn>
