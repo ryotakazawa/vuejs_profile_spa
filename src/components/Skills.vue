@@ -1,10 +1,8 @@
 <template>
-  <v-app class="pt-10 mb-10" style="background-color: #F2F2F2;">
+  <v-app class="pt-5 mb-10" style="background-color: #F2F2F2;">
     <v-container>
       <v-layout justify-center>
-        <v-card-title class="font-weight-bold">
-          <h1 data-aos="fade-up">Skills</h1>
-        </v-card-title>
+        <h1 data-aos="fade-up">Skills</h1>
       </v-layout>
 
       <Subtitle skill-category="Language" />
@@ -159,7 +157,7 @@ export default {
       {
         name: 'Photoshop',
         start: '0',
-        value: '88'
+        value: '25'
       }
     ]
   }),

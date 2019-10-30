@@ -1,56 +1,67 @@
 <template>
-  <v-app class="pt-10" style="background-color: #F2F2F2;">
-    <v-container>
-      <v-layout justify-center class="mb-8">
-        <v-card-title class="font-weight-bold">
-          <h1 data-aos="fade-up">About me</h1>
-        </v-card-title>
-      </v-layout>
-      <v-layout>
-        <v-flex xs1>
-        </v-flex>
-          <v-flex xs10>
-            <h3 data-aos="fade-up" class="profile-text">
-              1990年生まれ。
-            </h3>
-            <p></p>
-            <h3 data-aos="fade-up" class="profile-text">
-              青山学院大学経営学部出身。マーケティングを専攻し、特に広告表現がこころに与える効果について着目して研究していた。執筆論文が学内コンクールで入選。<br/>
-              学生団体を立ち上げ、300人規模の交流会や東京湾クルージング等を企画。<br/>
-              ニューヨークで英語力をバカにされた悔しさから猛特訓。ゼロから4ヶ月でTOEIC865点をマーク。<br/>
-            </h3>
-            <p></p>
-            <h3 data-aos="fade-up" class="profile-text">
-              卒業後はテレビ局系イベント運営会社を経て、個人事業主として独立(アパレル)。<br/>
-              海外ブランドの取り寄せサービスとヴィンテージ品販売をメインに、原宿でのポップアップ開催や業者向けの卸売など事業を拡大。<br/>
-              個人として力を発揮することを追求する一方で、その限界も痛感。<br/>
-              また、アパレル業界で常に前線に立ち続ける難しさもひしひしと感じていた。<br/>
-            </h3>
-            <p></p>
-            <h3 data-aos="fade-up" class="profile-text">
-              キャリアチェンジを模索する中で、以前から興味を抱いていたプログラミングを始める。<br/>
-              3ヶ月、4ヶ月と継続する内にどハマり。絶対にこれを仕事にしようと決意する。
-            </h3>
-          </v-flex>
-        <v-flex xs1>
-        </v-flex>
-      </v-layout>
-    </v-container>
-  </v-app>
+<v-app>
+  <v-container>
+    <v-layout
+      v-if="$vuetify.breakpoint.mdAndDown"
+      text-center
+      row
+      wrap
+      >
+      <v-flex >
+        <v-img
+          :src="require('../assets/topPage.png')"
+          contain                    
+          height="450"
+        ></v-img>
+      </v-flex>
+      <v-flex>
+        <h1 data-aos="zoom-in">Ryo Takazawa</h1>
+        <h3><vue-typer text="-Could you employ me?-" :repeat='0' pre-type-delay='1000' type-delay='80' ></vue-typer></h3>
+      </v-flex>
+    </v-layout>
+    <v-layout
+      v-else
+      align-center
+      row
+      wrap
+      class="mt-3"
+      >
+      <v-flex xs2 class="ml-9">
+      </v-flex>
+      <v-flex xs3 >
+        <h1 class="display-4 font-weight-bold" data-aos="zoom-in-left" data-aos-duration="1000"><span style="color: #e80135;">R</span>yo Takazawa</h1>
+        <h3><vue-typer text="-Could you employ me?-" :repeat='0' pre-type-delay='1500' ></vue-typer></h3>
+        
+      </v-flex>
+      <v-flex xs6 class="ml-9">
+        <v-img
+          :src="require('../assets/topPage.png')"
+          contain                    
+          height="465"
+          data-aos="zoom-in-right"
+          data-aos-duration="1000"
+        ></v-img>
+      </v-flex>
+      <v-flex xs1>
+      </v-flex>
+    </v-layout>
+  </v-container>
+</v-app>
 </template>
 
 <script>
+import { VueTyper } from 'vue-typer'
+
 export default {
-  props: ['userName'],
   data: () => ({
-    
+    //
   }),
+  components: {
+    VueTyper
+  },
 };
 </script>
 
+
 <style scoped>
-.profile-text{
-  color: grey;
-  line-height: 2.2rem;
-}
 </style>
