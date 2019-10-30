@@ -6,7 +6,7 @@
           <h1 data-aos="fade-up">Works</h1>
         </v-card-title>
       </v-layout>
-      <v-layout justify-center align-center raw wrap>
+      <v-layout justify-center  raw wrap>
         <v-flex 
           mt-9
           mb-3
@@ -24,7 +24,7 @@
               height="200px"
             ></v-img>
             <v-card-title>
-              {{ item.title }}
+              <h5>{{ item.title }}</h5>
             </v-card-title>
             <v-card-subtitle>
               {{ item.subtitle }}
