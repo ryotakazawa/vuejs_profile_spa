@@ -83,18 +83,21 @@ export default {
 ”細かい機能もきちんと作り込まれている”
 ”AWSのかなり難易度の高い技術もしっかり使いこなしている”
 "当サロンで過去に公開されたポートフォリオの中でも非常に優れた作品”
-とご評価頂きました。`,
+とご評価頂きました。
+Cloud9で開発してしまった為、ローカル環境及びdockerが導入できなかった事が心残り。
+次回以降の課題です。`,
           show: false,
           href:'#top',
           demo: 'https://thebestmen.net/',
           github: 'https://github.com/ryotakazawa/bestmen'},
         { id: "1",
-          pic: require('@/assets/ryotakazawa_vuejs.png'),
+          pic: require('@/assets/RyoTakazawaVuejs.png'),
           title: 'Profile',
           subtitle: 'Vue.js + Vuetify + Firebase',
           desc: `ご覧頂いているこちらのサイトです。
 「バックエンドをRails or Laravelで製作し、フロントにはVue or Reactを用いる」という昨今のトレンドにキャッチアップする為、まずはVue学習の第一歩を踏み出すべく製作しました。
 Firebaseでホスティングされており、functionを利用したメール送信機能も実装されております。
+前回の反省を生かしてdockerコンテナに環境を構築し、エディタにVSCodeを用いてローカルで開発を行いました。
 今回得た知見を元に、次回はRails+Vueのアプリケーションを製作する予定です。`,
           show: false,
           href:'#profile',

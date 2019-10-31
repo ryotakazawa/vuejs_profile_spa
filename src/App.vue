@@ -67,6 +67,7 @@
       <Skills  id="skills" />
       <Contact  id="contact" />
     </v-content>
+    <Footer />
   </v-app>
 </template>
 
@@ -76,6 +77,7 @@ import Profile from './components/Profile';
 import Skills from './components/Skills';
 import Works from './components/Works';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 export default {
   name: 'App',
@@ -84,7 +86,8 @@ export default {
     Profile,
     Skills,
     Works,
-    Contact
+    Contact,
+    Footer
   },
   data: () => ({
     navbar: null,
