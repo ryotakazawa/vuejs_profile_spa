@@ -7,7 +7,7 @@
       row
       wrap
       >
-      <v-flex >
+      <v-flex>
         <v-img
           :src="require('../assets/topPage.png')"
           contain                    
