@@ -1,24 +1,16 @@
-# profile_page
+# Ryo Takazawa -Could you employ me?-
 
-## Project setup
-```
-npm install
-```
+<br>「バックエンドをRails or Laravelで製作し、フロントにはVue or Reactを用いる」という昨今のトレンドにキャッチアップする為、まずはVue学習の第一歩を踏み出すべく製作しました。<br>
+<br>Firebaseでホスティングされており、functionを利用したメール送信機能も実装されております。<br>
+<br>前回の反省を生かしてdockerコンテナに環境を構築し、エディタにVSCodeを用いてローカルで開発を行いました。<br>
+<br>今回得た知見を元に、次回はRails+Vueのアプリケーションを製作する予定です。<br>
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+# URL
+https://ryo-takazawa.firebaseapp.com/
 
-### Compiles and minifies for production
-```
-npm run build
-```
+# 使用技術
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+* Vue.js
+* Vuetify
+* Webpack
+* Firebase
