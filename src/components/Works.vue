@@ -28,7 +28,7 @@
               {{ item.subtitle }}
             </v-card-subtitle>
             <v-card-actions>
-              <v-btn 
+              <v-btn v-if="item.demo"
                 color="success"
                 text
                 target="_blank"
@@ -36,7 +36,7 @@
                 >
                 <v-fa icon="home" style="font-size:30px;" /> 
               </v-btn>
-              <v-btn
+              <v-btn v-if="item.github"
                 color="success"
                 text
                 target="_blank"
@@ -84,7 +84,7 @@ export default {
 ”AWSのかなり難易度の高い技術もしっかり使いこなしている”
 "当サロンで過去に公開されたポートフォリオの中でも非常に優れた作品”
 とご評価頂きました。
-Cloud9で開発してしまった為、ローカル環境及びdockerが導入できなかった事が心残り。
+Cloud9で開発してしまった為、dockerが導入できなかった事が心残り。
 次回以降の課題です。`,
           show: false,
           href:'#top',
@@ -102,7 +102,29 @@ Firebaseでホスティングされており、functionを利用したメール�
           show: false,
           href:'#profile',
           demo: 'https://ryo-takazawa.firebaseapp.com/',
-          github: 'https://github.com/ryotakazawa/vuejs_profile_spa'},        
+          github: 'https://github.com/ryotakazawa/vuejs_profile_spa'},
+        { id: "1",
+          pic: require('@/assets/workInProgress.png'),
+          title: 'BaeSpot',
+          subtitle: 'Rails + Vue.js + Vuetify + AWS',
+          desc: `現在地周辺のインスタ映えするスポットをマップから簡単に探すことができるサービスです。
+railsをAPIとして利用し、フロントをVue.jsで実装することでSPA化。
+現在開発中です。`,
+          show: false,
+          href:'#profile',
+          demo: '',
+          github: 'https://github.com/ryotakazawa/baespot'},
+        { id: "1",
+          pic: require('@/assets/workInProgress.png'),
+          title: 'GSearcher',
+          subtitle: 'Ruby',
+          desc: `web上の情報をかんたんに取得できる業務用ソフトウェア。
+Ruby + Nokogiri +Seleniumでサクサク動作します。
+*商用提供しているのでリポジトリを非公開とさせて頂いております🙇‍♂️
+`,
+          show: false,
+          href:'#profile',
+          github: 'https://github.com/ryotakazawa/gsearcher'},
       ],
   }),
 };
