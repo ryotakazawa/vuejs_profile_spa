@@ -115,7 +115,7 @@ railsをAPIとして利用し、フロントをVue.jsで実装することでSPA
           demo: '',
           github: 'https://github.com/ryotakazawa/baespot'},
         { id: "1",
-          pic: require('@/assets/workInProgress.png'),
+          pic: require('@/assets/scraping.jpg'),
           title: 'GSearcher',
           subtitle: 'Ruby',
           desc: `web上の情報をかんたんに取得できる業務用ソフトウェア。
