@@ -106,7 +106,7 @@ export default {
         {
           name: 'JavaScript',
           start: '0',
-          value: '60'
+          value: '75'
         },
         {
           name: 'Ruby',
@@ -116,10 +116,15 @@ export default {
         {
           name: 'PHP',
           start: '0',
-          value: '40'
+          value: '25'
         },
         {
           name: 'PYTHON',
+          start: '0',
+          value: '25'
+        },
+        {
+          name: 'GO',
           start: '0',
           value: '25'
         },                              
@@ -149,6 +154,26 @@ export default {
       },
     ],
     others: [
+      {
+        name: 'Git',
+        start: '0',
+        value: '88'
+      },
+      {
+        name: 'Docker',
+        start: '0',
+        value: '75'
+      },
+      {
+        name: 'CircleCI',
+        start: '0',
+        value: '75'
+      },
+      {
+        name: 'Scraping',
+        start: '0',
+        value: '70'
+      },
       {
         name: 'English',
         start: '0',
