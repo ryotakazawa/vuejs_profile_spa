@@ -139,6 +139,11 @@ export default {
         name: 'Vue.js',
         start: '0',
         value: '50'
+      },
+      {
+        name: 'React',
+        start: '0',
+        value: '40'
       }
     ],
     clouds: [
