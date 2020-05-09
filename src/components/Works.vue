@@ -120,8 +120,7 @@ railsをAPIとして利用し、フロントをVue.jsで実装することでSPA
           subtitle: 'Ruby',
           desc: `web上の情報をかんたんに取得できる業務用ソフトウェア。
 Ruby + Nokogiri +Seleniumでサクサク動作します。
-*商用提供しているのでリポジトリを非公開とさせて頂いております🙇‍♂️
-`,
+*商用提供しているのでリポジトリを非公開とさせて頂いております🙇‍♂️`,
           show: false,
           href:'#profile',
           github: 'https://github.com/ryotakazawa/gsearcher'},
