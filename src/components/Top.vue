@@ -16,7 +16,7 @@
       </v-flex>
       <v-flex>
         <h1 data-aos="zoom-in">Ryo Takazawa</h1>
-        <h3><vue-typer text="-Could you employ me?-" :repeat='0' pre-type-delay='1000' type-delay='80' ></vue-typer></h3>
+        <h3><vue-typer text="-Web developer-" :repeat='0' pre-type-delay='1000' type-delay='80' ></vue-typer></h3>
       </v-flex>
     </v-layout>
     <v-layout
