@@ -1,5 +1,5 @@
 <template>
-  <v-app class="pt-5">
+  <v-app class="pt-5 mb-10">
     <v-container>
       <v-layout justify-center>
         <h1 data-aos="fade-up">Works</h1>

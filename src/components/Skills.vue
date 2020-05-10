@@ -1,5 +1,5 @@
 <template>
-  <v-app class="pt-5 mb-10" style="background-color: #F2F2F2;">
+  <v-app class="pt-5 mb-10 bg" style="background-color: #F2F2F2;">
     <v-container>
       <v-layout justify-center>
         <h1 data-aos="fade-up">Skills</h1>
@@ -197,5 +197,14 @@ export default {
 <style scoped>
   .v-progress-circular{
     margin: 1rem
+  }
+
+  .bg{
+    /*box-shadow: inset 0 0 15px -15px #fafafa;*/
+    /*box-shadow: 0 5px 5px -3px #F2F2F2,
+                0 -5px 5px -3px #F2F2F2;*/
+    box-shadow: 0 15px 15px -7px #F2F2F2,
+                0 -15px 15px -7px #F2F2F2;
+    
   }
 </style>
