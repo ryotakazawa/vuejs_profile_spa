@@ -6,7 +6,7 @@
         wrap
       >
         <v-flex xs12>
-          <v-app-bar 
+          <v-app-bar
             fixed
             flat
             color="transparent"
@@ -19,15 +19,15 @@
               <v-img
                 :src="require('./assets/RyoTakazawaRed.png')"
                 class="mt-1.5"
-                width="60"         
-                height="60" 
+                width="60"
+                height="60"
               ></v-img>
             </v-toolbar-title>
             <v-spacer></v-spacer>
             <v-btn
               text
-              v-for="(item, i) in items" 
-              :key="i"  
+              v-for="(item, i) in items"
+              :key="i"
               @click="$vuetify.goTo(item.href)"
               class="hidden-sm-and-down"
               >
@@ -97,7 +97,7 @@ export default {
         { title: 'Profile', href:'#profile' },
         { title: 'Works', href:'#works' },
         { title: 'Skills', href:'#skills' },
-        { title: 'Contact', href:'#contact' },        
+        { title: 'Contact', href:'#contact' },
       ],
   }),
 };
