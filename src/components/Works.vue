@@ -5,7 +5,7 @@
         <h1 data-aos="fade-up">Works</h1>
       </v-layout>
       <v-layout justify-center raw wrap>
-        <v-flex 
+        <v-flex
           mt-9
           mb-3
           v-for="(item, i) in items"

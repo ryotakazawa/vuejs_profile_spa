@@ -127,7 +127,7 @@ export default {
           name: 'GO',
           start: '0',
           value: '25'
-        },                              
+        },
       ],
     frameworks: [
       {
