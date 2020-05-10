@@ -10,7 +10,7 @@
       <v-flex>
         <v-img
           :src="require('../assets/topPage.png')"
-          contain                    
+          contain
           height="450"
         ></v-img>
       </v-flex>
@@ -31,12 +31,11 @@
       <v-flex xs2 class="ml-8" >
         <h1 class="display-3 font-weight-bold" data-aos="zoom-in-left" data-aos-duration="1000"><span style="color: #e80135;">R</span>yo Takazawa</h1>
         <h4 class="font-italic font-weight-bold"><vue-typer text="-Web developer-" :repeat='0' pre-type-delay='1500' ></vue-typer></h4>
-        
       </v-flex>
       <v-flex xs6 class="ml-8">
         <v-img
           :src="require('../assets/topPage.png')"
-          contain                    
+          contain
           height="465"
           data-aos="zoom-in-right"
           data-aos-duration="1000"
