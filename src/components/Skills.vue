@@ -114,19 +114,9 @@ export default {
           value: '75'
         },
         {
-          name: 'PHP',
-          start: '0',
-          value: '25'
-        },
-        {
-          name: 'PYTHON',
-          start: '0',
-          value: '25'
-        },
-        {
           name: 'GO',
           start: '0',
-          value: '25'
+          value: '40'
         },
       ],
     frameworks: [
@@ -136,14 +126,14 @@ export default {
         value: '75'
       },
       {
+        name: 'React',
+        start: '0',
+        value: '75'
+      },
+      {
         name: 'Vue.js',
         start: '0',
         value: '50'
-      },
-      {
-        name: 'React',
-        start: '0',
-        value: '40'
       }
     ],
     clouds: [
