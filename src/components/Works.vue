@@ -104,17 +104,6 @@ Firebaseでホスティングされており、functionを利用したメール�
           demo: 'https://ryo-takazawa.firebaseapp.com/',
           github: 'https://github.com/ryotakazawa/vuejs_profile_spa'},
         { id: "1",
-          pic: require('@/assets/workInProgress.png'),
-          title: 'BaeSpot',
-          subtitle: 'Rails + Vue.js + Vuetify + AWS',
-          desc: `現在地周辺のインスタ映えするスポットをマップから簡単に探すことができるサービスです。
-railsをAPIとして利用し、フロントをVue.jsで実装することでSPA化。
-現在開発中です。`,
-          show: false,
-          href:'#profile',
-          demo: '',
-          github: 'https://github.com/ryotakazawa/baespot'},
-        { id: "1",
           pic: require('@/assets/scraping.jpg'),
           title: 'GSearcher',
           subtitle: 'Ruby',
