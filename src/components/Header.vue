@@ -62,6 +62,19 @@
 </template>
 
 <script>
+export default {
+  data: () => ({
+    navbar: null,
+    toTop: '#top',
+    items: [
+        { title: 'Top', href:'#top' },
+        { title: 'Profile', href:'#profile' },
+        { title: 'Works', href:'#works' },
+        { title: 'Skills', href:'#skills' },
+        { title: 'Contact', href:'#contact' },
+      ],
+  }),
+};
 </script>
 
 <style scoped>
