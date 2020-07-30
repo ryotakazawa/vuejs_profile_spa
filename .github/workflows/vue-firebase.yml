@@ -21,8 +21,9 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: install package
       run:  npm install
-    - name: install package (functions)
+    - name: check out master
       uses: actions/checkout@master
+    - name: install package (functions)
       run:
         cd ./functions
         npm install
