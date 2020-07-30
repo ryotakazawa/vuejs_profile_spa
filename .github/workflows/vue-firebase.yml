@@ -1,0 +1,38 @@
+name: Firebase deploy
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    steps:
+    - name: check out master
+      uses: actions/checkout@master
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@master
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: install package
+      run:  npm install
+    - name: check out master
+      uses: actions/checkout@master
+    - name: install package (functions)
+      run:
+        cd functions && npm install
+    - name: check out master
+      uses: actions/checkout@master
+    - name: build vue code
+      run: npm run build
+    - name: deploy to Firebase Hosting
+      uses: w9jds/firebase-action@master
+      with:
+        args: deploy
+      env:
+        FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
