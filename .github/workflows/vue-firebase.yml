@@ -22,6 +22,7 @@ jobs:
     - name: install package
       run:  npm install
     - name: install package (functions)
+      uses: actions/checkout@master
       run: 
         cd ./functions
         npm install
