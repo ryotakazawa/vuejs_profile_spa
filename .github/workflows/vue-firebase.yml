@@ -20,9 +20,12 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - name: install package
-      run: 
-        cd ./functions
-        npm install
+      run:  npm install
+    - name: check out master
+      uses: actions/checkout@master
+    - name: install package (functions)
+      run:
+        cd functions && npm install
     - name: build vue code
       run: npm run build
     - name: deploy to Firebase Hosting
