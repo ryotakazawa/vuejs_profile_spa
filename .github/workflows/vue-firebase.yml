@@ -26,6 +26,8 @@ jobs:
     - name: install package (functions)
       run:
         cd functions && npm install
+    - name: check out master
+      uses: actions/checkout@master
     - name: build vue code
       run: npm run build
     - name: deploy to Firebase Hosting
