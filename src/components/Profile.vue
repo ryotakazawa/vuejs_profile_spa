@@ -9,7 +9,7 @@
         </v-flex>
           <v-flex xs10>
             <h3 data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" class="profile-text font-weight-light">
-              1990年生まれ！！
+              1990年生まれ。
             </h3>
             <p></p>
             <h3 data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" class="profile-text font-weight-light">
