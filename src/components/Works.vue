@@ -85,10 +85,11 @@ export default {
 "当サロンで過去に公開されたポートフォリオの中でも非常に優れた作品”
 とご評価頂きました。
 Cloud9で開発してしまった為、dockerが導入できなかった事が心残り。
-次回以降の課題です。`,
+次回以降の課題です。
+＊現在公開終了
+`,
           show: false,
           href:'#top',
-          demo: 'https://thebestmen.net/',
           github: 'https://github.com/ryotakazawa/bestmen'},
         { id: "1",
           pic: require('@/assets/RyoTakazawaVuejs.png'),
