@@ -10,5 +10,7 @@ https://ryo-takazawa.firebaseapp.com/
 
 * Vue.js
 * Vuetify
+* Node.js
 * Webpack
 * Firebase
+etc...
