@@ -114,6 +114,17 @@ Ruby + Nokogiri +Seleniumでサクサク動作します。
           show: false,
           href:'#profile',
           github: 'https://github.com/ryotakazawa/gsearcher'},
+        { id: "1",
+          pic: require('@/assets/tetris.png'),
+          title: 'Tetris',
+          subtitle: 'JavaScript',
+          desc: `JSの勉強を兼ねて制作したテトリスです。
+ライブラリ等は使用せず、素のJSのみで実装しました。
+GitHub Pagesでホスティングされています。`,
+          show: false,
+          href:'#profile',
+          demo: 'https://ryotakazawa.github.io/tetris/',
+          github: 'https://github.com/ryotakazawa/tetris'},
       ],
   }),
 };
