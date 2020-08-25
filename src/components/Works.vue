@@ -125,6 +125,17 @@ GitHub Pagesでホスティングされています。`,
           href:'#profile',
           demo: 'https://ryotakazawa.github.io/tetris/',
           github: 'https://github.com/ryotakazawa/tetris'},
+        { id: "1",
+          pic: require('@/assets/memory_game.png'),
+          title: 'Memory game ~伝説のラッパー編~',
+          subtitle: 'JavaScript',
+          desc: `JSの勉強を兼ねて制作した神経衰弱です。
+こちらもライブラリ等は使用せず、素のJSのみで実装しました。
+GitHub Pagesでホスティングされています。`,
+          show: false,
+          href:'#profile',
+          demo: 'https://ryotakazawa.github.io/Memory_game/',
+          github: 'https://github.com/ryotakazawa/Memory_game'},
       ],
   }),
 };
