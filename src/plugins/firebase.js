@@ -1,7 +1,7 @@
 import firebase from "firebase";
 
 const config = {
-  apiKey: "***REMOVED***",
+  apiKey: "",
   authDomain: "ryo-takazawa.firebaseapp.com",
   databaseURL: "ryo-takazawa.firebaseio.com",
   projectId: "ryo-takazawa",
